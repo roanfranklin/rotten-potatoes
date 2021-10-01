@@ -20,8 +20,10 @@ spec:
     app: rotten-potatoes
   ports:
    - port: 5000
-     protocol: TCP
-     name: ui
+     #- port: 80
+     #  targetPort: 5000
+     # #  protocol: TCP
+     # #  name: ui
      nodePort: 30000
   type: NodePort
   #type: ClusterIP
